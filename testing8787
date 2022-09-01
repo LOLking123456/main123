@@ -1,0 +1,494 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Turtorial = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local Submit = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local imput = Instance.new("TextBox")
+local Submit_2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Submit_3 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+
+--Properties:
+
+Turtorial.Name = "Turtorial"
+Turtorial.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Turtorial.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = Turtorial
+main.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+main.Position = UDim2.new(0.349577636, 0, 0.375460118, 0)
+main.Size = UDim2.new(0, 451, 0, 369)
+main.Active = true
+main.Draggable = true
+
+Submit.Name = "Submit"
+Submit.Parent = main
+Submit.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Submit.Position = UDim2.new(0.242718443, 0, 0.3874726, 0)
+Submit.Size = UDim2.new(0, 232, 0, 54)
+Submit.Font = Enum.Font.Highway
+Submit.Text = "Submit"
+Submit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Submit.TextSize = 40.000
+Submit.TextStrokeTransparency = 0.000
+Submit.TextWrapped = true
+Submit.MouseButton1Down:connect(function()
+	if imput.Text == "DragonBall12345!!..Legend777!!???" then
+		main.Visible = false
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Dragon-Ball/main/OpScript5"))()
+     end
+end)
+
+UICorner.CornerRadius = UDim.new(0, 50)
+UICorner.Parent = Submit
+
+UICorner_2.CornerRadius = UDim.new(0, 50)
+UICorner_2.Parent = Submit
+
+imput.Name = "imput"
+imput.Parent = main
+imput.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+imput.BorderColor3 = Color3.fromRGB(0, 0, 0)
+imput.Position = UDim2.new(0.181700418, 0, 0.134851441, 0)
+imput.Size = UDim2.new(0, 296, 0, 60)
+imput.Font = Enum.Font.SourceSans
+imput.Text = "Enter Key"
+imput.TextColor3 = Color3.fromRGB(0, 0, 0)
+imput.TextSize = 14.000
+
+Submit_2.Name = "Submit"
+Submit_2.Parent = main
+Submit_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Submit_2.Position = UDim2.new(0.242718443, 0, 0.620154798, 0)
+Submit_2.Size = UDim2.new(0, 232, 0, 54)
+Submit_2.Font = Enum.Font.Highway
+Submit_2.Text = "Get Key"
+Submit_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Submit_2.TextSize = 40.000
+Submit_2.TextStrokeTransparency = 0.000
+Submit_2.TextWrapped = true
+Submit_2.MouseButton1Down:connect(function()
+	local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
+	CoreGui:SetCore("SendNotification", {
+		-- Customizable
+		Title = "Paste To Google",
+		Text = "Copied To Clipboard",
+		Duration = 7, -- Set the duration to how much you want this to stay
+		-- More code in part 2
+	})
+	setclipboard("https://direct-link.net/256968/dragon-ball-evolution")
+	toclipboard("https://direct-link.net/256968/dragon-ball-evolution")
+end)
+
+
+UICorner_3.CornerRadius = UDim.new(0, 50)
+UICorner_3.Parent = Submit_2
+
+Submit_3.Name = "Submit"
+Submit_3.Parent = main
+Submit_3.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Submit_3.Position = UDim2.new(0.242718443, 0, 0.831536889, 0)
+Submit_3.Size = UDim2.new(0, 232, 0, 54)
+Submit_3.Font = Enum.Font.Highway
+Submit_3.Text = "Join Our Discord"
+Submit_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Submit_3.TextSize = 25.000
+Submit_3.TextStrokeTransparency = 0.000
+Submit_3.TextWrapped = true
+Submit_3.MouseButton1Down:connect(function()
+local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
+CoreGui:SetCore("SendNotification", {
+	-- Customizable
+	Title = "Discord",
+	Text = "Copied To Clipboard",
+	Duration = 7, -- Set the duration to how much you want this to stay
+	-- More code in part 2
+})
+setclipboard("https://discord.com/invite/dtQKPPCyfK")
+toclipboard("https://discord.com/invite/dtQKPPCyfK")
+end)
+
+
+UICorner_4.CornerRadius = UDim.new(0, 50)
+UICorner_4.Parent = Submit_3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
